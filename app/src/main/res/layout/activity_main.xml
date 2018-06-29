@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fileTitle"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="fileName.txt"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/editedText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Hello World!"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:background="@null"
+        android:layout_below="@+id/fileTitle"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/saveFab"
+        style="@style/custom_fab_theme_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="onClickSave"
+        app:srcCompat="@drawable/ic_save" />
+
+</RelativeLayout>
